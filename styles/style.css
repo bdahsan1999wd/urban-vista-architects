@@ -26,17 +26,44 @@ body {
   color: rgb(114, 114, 114);
 }
 
+/* ----------Text Center---------- */
+.text-center {
+  text-align: center;
+}
+
+/* ----------Section Description Styles Added---------- */
+.section-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 24px;
+}
+
+/* ----------Primary Button Styles Added---------- */
+.primary-btn {
+  display: block;
+  text-decoration: none;
+  background-color: rgb(255, 144, 14);
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 23px;
+  padding: 20px 25px;
+  border-radius: 8px;
+}
+
 /* ------------------------------Shared Styles End's Here------------------------------ */
 
 /* ----------Navbar Styles Added---------- */
 .navbar {
-  border: 2px solid blue;
-  max-width: 1920px;
-  justify-content: space-evenly;
+  max-width: 1440px;
+  justify-content: space-between;
   margin: 0 auto;
+  padding-top: 50px;
 }
+
 .brand-name {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 53px;
   cursor: pointer;
@@ -47,11 +74,103 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .nav-link {
   text-decoration: none;
   color: rgb(66, 66, 66);
-  margin-right: 50px;
-  font-size: 18px;
+  margin-left: 50px;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 26px;
+}
+
+/* ----------Heading Section Styles Added---------- */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  max-width: 1920px;
+  height: 1322px;
+  margin: 0 auto;
+  margin-bottom: 85px;
+}
+
+/* ----------Banner Section Styles Added---------- */
+.banner {
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* ----------Banner Text Styles Added---------- */
+.banner-texts {
+  max-width: 862px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+/* ----------Banner Button and Image Styles Added---------- */
+.banner-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-img {
+  max-width: 1440px;
+  height: 700px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.banner-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------------------Responsive Media Query Added------------------------------ */
+
+/* ----------Mobile/Small Device Responsive Added---------- */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .brand-name {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .banner-title {
+    font-size: 3.2rem;
+  }
+  .banner-description {
+    padding: 10px;
+  }
+}
+
+/* ----------Medium/Tablet Device Responsive Added---------- */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .brand-name {
+    font-size: 2.5rem;
+  }
+  .nav-link {
+    margin-left: 25px;
+  }
+  .banner-title {
+    font-size: 3.5rem;
+  }
 }
