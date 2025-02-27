@@ -2,7 +2,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* font-family: "Work Sans", serif; */
 
-h1 {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 1px solid red;
   font-family: "Work Sans", serif;
+}
+
+/* ------------------------------Shared Styles Start Here------------------------------ */
+
+.display-flex {
+  display: flex;
+}
+
+/* ----------Shared Color Styles Added---------- */
+.dark-1 {
+  color: rgb(19, 19, 19);
+}
+.dark-2 {
+  color: rgb(114, 114, 114);
+}
+
+/* ------------------------------Shared Styles End's Here------------------------------ */
+
+/* ----------Navbar Styles Added---------- */
+.navbar {
+  border: 2px solid blue;
+  max-width: 1920px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.brand-name {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
 }
