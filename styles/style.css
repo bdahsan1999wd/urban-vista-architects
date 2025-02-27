@@ -68,6 +68,12 @@ body {
   line-height: 53px;
   cursor: pointer;
 }
+.brand-color-1 {
+  color: rgb(114, 114, 114);
+}
+.brand-color-2 {
+  color: rgb(255, 144, 14);
+}
 
 .nav-links {
   list-style: none;
@@ -86,6 +92,7 @@ body {
 
 /* ----------Heading Section Styles Added---------- */
 header {
+  border: 1px solid blue;
   background-color: rgba(255, 144, 14, 0.1);
   max-width: 1920px;
   height: 1322px;
@@ -135,13 +142,64 @@ header {
   display: block;
 }
 
+/* --------------------Main Section Styles Added-------------------- */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ----------Our Features Section Styles Added---------- */
+.features {
+  border: 1px solid goldenrod;
+  margin-bottom: 130px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* -----Our Features Image Styles Added----- */
+.feature-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.feature-image-container img {
+  width: 100%;
+}
+
+/* -----Our Features Text Styles----- */
+.our-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.feature-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 53px;
+}
+
+.color-1 {
+  color: rgb(114, 114, 114);
+  font-weight: 500;
+}
+.color-2 {
+  color: rgb(255, 144, 14);
+}
+
+.feature-description {
+  margin-bottom: 32px;
+}
+
 /* ------------------------------Responsive Media Query Added------------------------------ */
 
-/* ----------Mobile/Small Device Responsive Added---------- */
+/* --------------------Mobile/Small Device Responsive Added-------------------- */
 @media screen and (max-width: 576px) {
-  .navbar {
+  /* -----Heading Section Mobile Responsive Added----- */
+  .navbar,
+  .nav-links,
+  .features {
     flex-direction: column;
-    width: 100%;
   }
 
   .brand-name {
@@ -151,19 +209,36 @@ header {
   }
 
   .nav-links {
-    flex-direction: column;
     gap: 10px;
   }
+
   .banner-title {
     font-size: 3.2rem;
   }
+
   .banner-description {
     padding: 10px;
   }
+
+  /* -----Features Section Mobile Responsive Added----- */
+  .features {
+    flex-direction: column-reverse;
+  }
+  .our-feature {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .feature-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ----- ----- */
 }
 
-/* ----------Medium/Tablet Device Responsive Added---------- */
+/* --------------------Medium/Tablet Device Responsive Added-------------------- */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  /* -----Heading Section Tablet Responsive Added----- */
   .brand-name {
     font-size: 2.5rem;
   }
@@ -173,4 +248,19 @@ header {
   .banner-title {
     font-size: 3.5rem;
   }
+
+  /* -----Features Section Tablet Responsive Added----- */
+  .features {
+    flex-direction: column-reverse;
+  }
+  .our-feature {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .feature-image-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ----- ----- */
 }
