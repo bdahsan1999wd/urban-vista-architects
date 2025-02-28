@@ -8,7 +8,6 @@
 }
 
 body {
-  border: 1px solid red;
   font-family: "Work Sans", serif;
 }
 
@@ -114,7 +113,6 @@ body {
 
 /* ----------Heading Section Styles Added---------- */
 header {
-  border: 1px solid blue;
   background-color: rgba(255, 144, 14, 0.1);
   max-width: 1920px;
   height: 1322px;
@@ -172,7 +170,6 @@ main {
 
 /* ----------Our Features Section Styles Added---------- */
 .features {
-  border: 1px solid goldenrod;
   margin-bottom: 130px;
   align-items: center;
   justify-content: space-evenly;
@@ -216,7 +213,6 @@ main {
 /* ----------Love and Enjoy Section Styles Added---------- */
 
 .love-and-enjoy {
-  border: 1px solid blue;
   margin-bottom: 130px;
   justify-content: space-between;
 }
@@ -286,7 +282,6 @@ main {
 
 /* ----------Some Facts Section Styles Added---------- */
 .some-facts-section {
-  border: 1px solid red;
   margin-bottom: 130px;
 }
 .facts-container {
@@ -325,7 +320,6 @@ main {
 
 /* ----------Our Sponsors Section Styles Added---------- */
 .sponsors-section {
-  border: 1px solid red;
   margin-bottom: 130px;
   text-align: center;
 }
@@ -339,7 +333,6 @@ main {
 
 /* ----------Footer Section Styles Added---------- */
 footer {
-  border: 1px solid purple;
   max-width: 1440px;
   height: 100px;
   margin: 0 auto;
