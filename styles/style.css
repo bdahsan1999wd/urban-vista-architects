@@ -337,6 +337,24 @@ main {
   cursor: pointer;
 }
 
+/* ----------Footer Section Styles Added---------- */
+footer {
+  border: 1px solid purple;
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: rgb(255, 244, 231);
+  margin-bottom: 100px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 23px;
+  color: rgb(66, 66, 66);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ------------------------------Responsive Media Query Added------------------------------ */
 
 /* --------------------Mobile/Small Device Responsive Added-------------------- */
