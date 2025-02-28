@@ -12,23 +12,35 @@ body {
   font-family: "Work Sans", serif;
 }
 
+#hide {
+  display: none;
+}
+
 /* ------------------------------Shared Styles Start Here------------------------------ */
 
 .display-flex {
   display: flex;
 }
 
-/* ----------Shared Color Styles Added---------- */
-.dark-1 {
-  color: rgb(19, 19, 19);
-}
-.dark-2 {
-  color: rgb(114, 114, 114);
-}
-
 /* ----------Text Center---------- */
 .text-center {
   text-align: center;
+}
+
+/* ----------Section Title Styles Added---------- */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 53px;
+  color: rgb(19, 19, 19);
+}
+
+/* ----------h5 Section Title Styles Added---------- */
+.h5-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 23px;
+  color: rgb(19, 19, 19);
 }
 
 /* ----------Section Description Styles Added---------- */
@@ -37,6 +49,16 @@ body {
   font-weight: 400;
   line-height: 26px;
   margin-top: 24px;
+  color: rgb(114, 114, 114);
+}
+
+/* ----------Features Section Description Styles Added---------- */
+.features-section-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+  color: rgb(114, 114, 114);
 }
 
 /* ----------Primary Button Styles Added---------- */
@@ -191,6 +213,77 @@ main {
   margin-bottom: 32px;
 }
 
+/* ----------Love and Enjoy Section Styles Added---------- */
+
+.love-and-enjoy {
+  border: 1px solid blue;
+  margin-bottom: 130px;
+  justify-content: space-between;
+}
+
+/* -----Text Container Styles Added----- */
+.text-container {
+  margin-top: 39px;
+  margin-bottom: 38px;
+}
+
+.features-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 53px;
+  color: rgb(19, 19, 19);
+  padding-left: 21px;
+  border-left: 5px solid rgb(255, 144, 14);
+}
+.features-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(114, 114, 114);
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.feature-item {
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* -----Feature Image Container Styles Added----- */
+.image-container {
+  flex-direction: column;
+  align-items: start;
+}
+.image-container img {
+  width: 100%;
+}
+
+/* -----Features Button Styles Added----- */
+.feature-btn {
+  background-color: rgb(255, 144, 14);
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 40px;
+  padding: 45px 42px;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: -18%;
+  margin-left: -13%;
+}
+.big-btn {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+
 /* ------------------------------Responsive Media Query Added------------------------------ */
 
 /* --------------------Mobile/Small Device Responsive Added-------------------- */
@@ -233,7 +326,17 @@ main {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* ----- ----- */
+  /* -----Love and Enjoy Section Mobile Responsive Added----- */
+  .love-and-enjoy {
+    flex-direction: column-reverse;
+  }
+  .image-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature-btn {
+    padding: 25px 22px;
+  }
 }
 
 /* --------------------Medium/Tablet Device Responsive Added-------------------- */
@@ -262,5 +365,24 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* ----- ----- */
+  /* -----Love and Enjoy Section Tablet Responsive Added----- */
+  .love-and-enjoy {
+    flex-direction: column-reverse;
+  }
+  .features-title {
+    text-align: center;
+  }
+  .features-description {
+    text-align: center;
+  }
+  .image-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature-btn {
+    padding: 35px 32px;
+  }
+  .feature-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
