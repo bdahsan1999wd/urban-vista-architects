@@ -271,8 +271,8 @@ main {
   text-align: center;
   border: none;
   cursor: pointer;
-  margin-top: -18%;
-  margin-left: -13%;
+  margin-top: -130px;
+  margin-left: -100px;
 }
 .big-btn {
   font-size: 4rem;
@@ -330,7 +330,12 @@ main {
   grid-template-columns: repeat(5, 1fr);
   cursor: pointer;
 }
-
+.sponsors-container img {
+  filter: grayscale(100%);
+}
+.sponsors-container img:hover {
+  filter: none;
+}
 /* ----------Footer Section Styles Added---------- */
 footer {
   max-width: 1440px;
