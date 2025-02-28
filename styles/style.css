@@ -323,6 +323,20 @@ main {
   color: rgb(114, 114, 114);
 }
 
+/* ----------Our Sponsors Section Styles Added---------- */
+.sponsors-section {
+  border: 1px solid red;
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.sponsors-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  cursor: pointer;
+}
+
 /* ------------------------------Responsive Media Query Added------------------------------ */
 
 /* --------------------Mobile/Small Device Responsive Added-------------------- */
@@ -398,6 +412,15 @@ main {
   .fact {
     width: 240px;
   }
+
+  /* -----Our Sponsors Section Mobile Responsive Added----- */
+  .sponsors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
 }
 
 /* --------------------Medium/Tablet Device Responsive Added-------------------- */
@@ -466,5 +489,10 @@ main {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
     gap: 30px;
+  }
+
+  /* -----Our Sponsors Section Tablet Responsive Added----- */
+  .sponsors-container {
+    padding: 30px;
   }
 }
