@@ -270,7 +270,7 @@ main {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 40px;
-  padding: 45px 42px;
+  padding: 55px 45px;
   border-radius: 8px;
   text-align: center;
   border: none;
@@ -282,6 +282,45 @@ main {
   font-size: 4rem;
   font-weight: 700;
   line-height: 70px;
+}
+
+/* ----------Some Facts Section Styles Added---------- */
+.some-facts-section {
+  border: 1px solid red;
+  margin-bottom: 130px;
+}
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.fact {
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  text-align: center;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.fact-title {
+  font-size: 2.8rem;
+  line-height: 53px;
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+}
+
+.fact-subtitle {
+  font-size: 1.25rem;
+  line-height: 23px;
+  font-weight: 600;
+  color: rgb(114, 114, 114);
 }
 
 /* ------------------------------Responsive Media Query Added------------------------------ */
@@ -317,11 +356,13 @@ main {
   .features {
     flex-direction: column-reverse;
   }
+
   .our-feature {
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
   }
+
   .feature-image-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -330,12 +371,32 @@ main {
   .love-and-enjoy {
     flex-direction: column-reverse;
   }
+
   .image-container {
     align-items: center;
     flex-direction: column;
   }
+
   .feature-btn {
     padding: 25px 22px;
+  }
+
+  /* -----Some Facts Section Mobile Responsive Added----- */
+  .some-facts-section {
+    text-align: center;
+  }
+
+  .facts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .fact {
+    width: 240px;
   }
 }
 
@@ -345,9 +406,11 @@ main {
   .brand-name {
     font-size: 2.5rem;
   }
+
   .nav-link {
     margin-left: 25px;
   }
+
   .banner-title {
     font-size: 3.5rem;
   }
@@ -356,11 +419,13 @@ main {
   .features {
     flex-direction: column-reverse;
   }
+
   .our-feature {
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
   }
+
   .feature-image-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -369,20 +434,37 @@ main {
   .love-and-enjoy {
     flex-direction: column-reverse;
   }
+
   .features-title {
     text-align: center;
+    border: none;
   }
+
   .features-description {
     text-align: center;
   }
+
   .image-container {
     align-items: center;
     flex-direction: column;
   }
+
   .feature-btn {
     padding: 35px 32px;
   }
+
   .feature-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* -----Some Facts Section Tablet Responsive Added----- */
+  .some-facts-section {
+    text-align: center;
+  }
+
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    gap: 30px;
   }
 }
