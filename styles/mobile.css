@@ -1,0 +1,84 @@
+/* --------------------Mobile/Small Device Responsive Added-------------------- */
+
+@media screen and (max-width: 576px) {
+  /* -----Heading Section Mobile Responsive Added----- */
+  .navbar,
+  .nav-links,
+  .features {
+    flex-direction: column;
+  }
+
+  .brand-name {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .banner-title {
+    font-size: 3.2rem;
+  }
+
+  .banner-description {
+    padding: 10px;
+  }
+
+  /* -----Features Section Mobile Responsive Added----- */
+  .features {
+    flex-direction: column-reverse;
+  }
+
+  .our-feature {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .feature-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* -----Love and Enjoy Section Mobile Responsive Added----- */
+  .love-and-enjoy {
+    flex-direction: column-reverse;
+  }
+
+  .image-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .feature-btn {
+    padding: 25px 22px;
+  }
+
+  /* -----Some Facts Section Mobile Responsive Added----- */
+  .some-facts-section {
+    text-align: center;
+  }
+
+  .facts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .fact {
+    width: 240px;
+  }
+
+  /* -----Our Sponsors Section Mobile Responsive Added----- */
+  .sponsors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+}

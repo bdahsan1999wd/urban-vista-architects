@@ -1,0 +1,74 @@
+/* --------------------Medium/Tablet Device Responsive Added-------------------- */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* -----Heading Section Tablet Responsive Added----- */
+  .brand-name {
+    font-size: 2.5rem;
+  }
+
+  .nav-link {
+    margin-left: 25px;
+  }
+
+  .banner-title {
+    font-size: 3.5rem;
+  }
+
+  /* -----Features Section Tablet Responsive Added----- */
+  .features {
+    flex-direction: column-reverse;
+  }
+
+  .our-feature {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .feature-image-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* -----Love and Enjoy Section Tablet Responsive Added----- */
+  .love-and-enjoy {
+    flex-direction: column-reverse;
+  }
+
+  .features-title {
+    text-align: center;
+    border: none;
+  }
+
+  .features-description {
+    text-align: center;
+  }
+
+  .image-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .feature-btn {
+    padding: 35px 32px;
+  }
+
+  .feature-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* -----Some Facts Section Tablet Responsive Added----- */
+  .some-facts-section {
+    text-align: center;
+  }
+
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  /* -----Our Sponsors Section Tablet Responsive Added----- */
+  .sponsors-container {
+    padding: 30px;
+  }
+}

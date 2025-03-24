@@ -72,7 +72,6 @@ body {
   padding: 20px 25px;
   border-radius: 8px;
 }
-
 /* ------------------------------Shared Styles End's Here------------------------------ */
 
 /* ----------Navbar Styles Added---------- */
@@ -280,6 +279,12 @@ main {
   line-height: 70px;
 }
 
+/* -----Rotate Effect Added----- */
+.feature-btn:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+
 /* ----------Some Facts Section Styles Added---------- */
 .some-facts-section {
   margin-bottom: 130px;
@@ -318,6 +323,12 @@ main {
   color: rgb(114, 114, 114);
 }
 
+/* -----Zoom Effect Added----- */
+.fact:hover {
+  transform: scale(1.3);
+  transition: 0.5s ease-in-out;
+}
+
 /* ----------Our Sponsors Section Styles Added---------- */
 .sponsors-section {
   margin-bottom: 130px;
@@ -336,6 +347,7 @@ main {
 .sponsors-container img:hover {
   filter: none;
 }
+
 /* ----------Footer Section Styles Added---------- */
 footer {
   max-width: 1440px;
@@ -351,164 +363,4 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* ------------------------------Responsive Media Query Added------------------------------ */
-
-/* --------------------Mobile/Small Device Responsive Added-------------------- */
-@media screen and (max-width: 576px) {
-  /* -----Heading Section Mobile Responsive Added----- */
-  .navbar,
-  .nav-links,
-  .features {
-    flex-direction: column;
-  }
-
-  .brand-name {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-  }
-
-  .nav-links {
-    gap: 10px;
-  }
-
-  .banner-title {
-    font-size: 3.2rem;
-  }
-
-  .banner-description {
-    padding: 10px;
-  }
-
-  /* -----Features Section Mobile Responsive Added----- */
-  .features {
-    flex-direction: column-reverse;
-  }
-
-  .our-feature {
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .feature-image-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  /* -----Love and Enjoy Section Mobile Responsive Added----- */
-  .love-and-enjoy {
-    flex-direction: column-reverse;
-  }
-
-  .image-container {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .feature-btn {
-    padding: 25px 22px;
-  }
-
-  /* -----Some Facts Section Mobile Responsive Added----- */
-  .some-facts-section {
-    text-align: center;
-  }
-
-  .facts-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-  }
-
-  .fact {
-    width: 240px;
-  }
-
-  /* -----Our Sponsors Section Mobile Responsive Added----- */
-  .sponsors-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-  }
-}
-
-/* --------------------Medium/Tablet Device Responsive Added-------------------- */
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  /* -----Heading Section Tablet Responsive Added----- */
-  .brand-name {
-    font-size: 2.5rem;
-  }
-
-  .nav-link {
-    margin-left: 25px;
-  }
-
-  .banner-title {
-    font-size: 3.5rem;
-  }
-
-  /* -----Features Section Tablet Responsive Added----- */
-  .features {
-    flex-direction: column-reverse;
-  }
-
-  .our-feature {
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .feature-image-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* -----Love and Enjoy Section Tablet Responsive Added----- */
-  .love-and-enjoy {
-    flex-direction: column-reverse;
-  }
-
-  .features-title {
-    text-align: center;
-    border: none;
-  }
-
-  .features-description {
-    text-align: center;
-  }
-
-  .image-container {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .feature-btn {
-    padding: 35px 32px;
-  }
-
-  .feature-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* -----Some Facts Section Tablet Responsive Added----- */
-  .some-facts-section {
-    text-align: center;
-  }
-
-  .facts-container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 50px;
-    gap: 30px;
-  }
-
-  /* -----Our Sponsors Section Tablet Responsive Added----- */
-  .sponsors-container {
-    padding: 30px;
-  }
 }
